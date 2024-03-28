@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: #eeeeee;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.navbar{
+    height: 10vh;
+    width:75vw;
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+    
+
+.logo{
+    padding-right: 5rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 1.5em;
+}
+
+.rightNav{
+    display: flex;
+    flex-direction: row;
+    /* gap: 2rem; */
+    align-items: center;
+
+}
+.navList {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem; 
+}
+.navList li a{
+    border-radius: 5rem;
+    padding: 0.5rem;
+}
+.navList li a {
+    text-decoration: none;
+}
+.navList li a:hover {
+    background-color: #eeeeee;
+    color: black;
+} 
+
+/* hero section */
+
+.hero-container {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: black;
+}
+
+.hero-left {
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.hero-left-heading {
+    font-size: 3.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-left-heading-sec {
+    font-size: 1.5rem;
+    /* padding-left: 1rem; */
+}
+
+.hero-left-para{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.hireme {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.hirebutton {
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #1A638B;
+    display: flex;
+    justify-content: center;
+    color: #eeeeee;
+    align-items: center;
+    /* text-decoration: none; */
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.hirebutton a {
+    text-decoration: none;
+}
+.hirebutton:hover  {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    transition-duration: 0.5s;
+    background-color: #eeeeee;
+    
+}
+.hirebutton a:hover {
+    /* background-color: #eeeeee; */
+    color: #1A638B;
+}
+
+
+
+.hero-right {
+    width: 40%;
+    height: 80%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 7rem;
+    background-image: linear-gradient(to right, black, #1a638b);
+}
+
+@keyframes animation-a {
+  0% {
+    border-radius: 7rem;
+  }
+
+
+  50% {
+    border-radius: 25rem;
+  }
+
+  
+  100% {
+    border-radius: 7rem;
+  }
+}
+
+
+.hero-image {
+    animation: animation-a 4s ease 0s infinite ;
+}
+
+
+
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* social link  */
+
+
+.social-container {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    background-image: linear-gradient(to right, rgb(161, 194, 225), #9e9e9e);
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    margin-top: 10vh;
+    /* opacity: ; */    
+}
+
+.social-link {
+    width: 80%;
+    height: 70%;
+    /* background-color: #7a1414; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #1A638B;
+
+}
+
+.links {
+    width: 12%;
+    height: 80%;
+    background-color: #1A638B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.links a i{
+    font-size: 3rem;
+    color: #eeeeee;
+}
+
+
+@keyframes example {
+   0% {
+    background-color: #1A638B;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+   }
+
+   100% {
+    background-color: #eeeeee;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    color: #1A638B;
+    
+   }
+}
+
+.social-container {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.links:hover {
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.links a i:hover {
+    color: #1A638B;
+    
+}
+
+
+
+/* project section  */
+
+.project-section {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10vh;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.project-heading {
+    height: 15%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+    
+}
+.project-heading h2 {
+    margin-top: 1rem;
+    /* height: 100%; */
+    width: fit-content;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: solid;
+    border-width: 0.1rem;
+    /* display: inline; */
+    border-color: #1A638B;
+    border-radius: 1rem;
+    
+    
+}
+
+.para-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-container {
+    width: 100%;
+    height: 80%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    
+}
+
+.project-card {
+    height: 45% ;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+    /* background-color: #277faf; */
+    justify-content: space-between;
+    /* align-items: center; */
+    border-radius: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.project-detail {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    /* background-color: #ba1919; */
+}
+
+.project-detail a {
+    width: 30%;
+    height: 100%;
+    /* padding-top: 1rem; */
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #1a638b;
+    color: black;
+    text-decoration: none;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-detail a:hover {
+    animation-name: example;
+    animation-duration: 1s;
+
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+@keyframe proj-ani {
+    0% {
+        opacity: 0;
+        display: none;
+
+    }
+
+    100% {
+        opacity: 1;
+        display :content;
+    }
+}
+
+
+
+.overlay:hover {
+ animation-name: proj-ani;
+}
+
+
+
+/* skill section  */
+
+.skill-section {
+    height: 100vh;
+    width: 80vw;
+    margin-top: 10vh;
+    /* background-color: #1A638B; */
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-container {
+    height: 85%;
+    width: 100%;
+    /* padding: 50px; */
+    /* background-color: #9e9e9e; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem ;
+    justify-content: center;
+    
+}
+
+.Skills {
+    /* background-color: #000000; */
+    height: 15%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+    /* flex-wrap: ; */
+    
+    
+}
+.Skills h1{
+    font-size: medium;
+}
+.bar {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(168, 190, 190);
+    display: inline;
+    border-radius: 2rem;
+    /* overflow: hidden; */
+    border: solid;
+    border-color: #1a638b;
+    animation: progress-animation 2s ease forwards;
+
+    
+}
+
+.htmlpercent {
+    background-color: #c27811;
+    height: 100%;
+    width: 80%;
+    display: block;
+    border-radius: 2rem;
+    animation: percent-animation 2s ease forwards;
+    
+}
+
+
+@keyframes progress-animation {
+    from { width: 0%; } /* Start from 0% width */
+    to { width: 100%; } /* End at 80% width */
+}
+
+@keyframes percent-animation {
+    from { width: 0%; } /* Start from 0% width */
+    to { width: 80%; } /* End at 80% width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aage{
+    height: 10vh;
+}
