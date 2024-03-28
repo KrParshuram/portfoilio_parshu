@@ -6,12 +6,18 @@
     color: #eeeeee;
     
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000;
+    /* background: #000; */
 }
 
 .navbar{
@@ -98,9 +104,17 @@ body{
     font-size: 1rem;
 }
 
+
+.button-hero{
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+}
+
+
 .hireme {
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     display: flex;
     /* justify-content: center; */
 }
@@ -115,7 +129,7 @@ body{
     align-items: center;
     /* text-decoration: none; */
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.1rem;
 }
 
 .hirebutton a {
@@ -587,6 +601,116 @@ body{
 }
 
 
+/* contact-section  */
+.contact-section {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000; */
+    margin-top: 15vh;
+    background-color: #000;
+
+}
+
+.contact-us-section {
+    height: 92%;
+    width: 70%;
+    display: flex;
+    padding-left: 2rem;
+    
+
+}
+
+.contact_field {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-direction: column;
+    gap: 2rem;
+    /* color: #000; */
+}
+
+.contact_field h1{
+    /* color: #000; */
+     font-size: 40px;
+     letter-spacing: 1px;
+     font-weight: 600;
+     /* color: #000; */
+     margin-bottom: 10px
+ }
+ .contact_field p{
+     /* color: #000; */
+     font-size: 13px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     margin-bottom: 35px;
+     /* color: #000; */
+ }
+
+.contact_field input {
+    border: none;
+    outline: none;
+    height: 5rem;
+    background-color: #1A638B;
+    border-bottom: 1px solid #ccc;
+    color: #ffffff;
+    
+}
+
+.contact_field textarea {
+    height: 8rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding-top: 1rem   ;
+
+}
+.contact_form_submit {
+    color: #f9fafa;
+    background-color: #1A638B;
+    height: 2.3rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
+
+.contact-info-section {
+    height: 92%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.contact-info-card {
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #1A638B;
+    padding-left: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    justify-content: space-evenly;
+}
+
+.contact-info-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+
+
+
+
+/* footer section  */
+
 .footer-section {
     height: 10vh;
     width: 80vw;
@@ -594,6 +718,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #000;
 
 }
 
