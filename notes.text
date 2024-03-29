@@ -1,10 +1,8 @@
-background: #FEFDED;
 
-
-
+webpage background--
+  background: #FEFDED;
 
 button animation ---
-
 ---hover effects---
 
     border-top-right-radius: 1rem;
@@ -17,5 +15,21 @@ button animation ---
     transform: scale(1.1);
 
 ---button background color---
-
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+
+
+
+
+
+
+
+
+--things to be done  in the future:
+    1.making the website responsive
+    2.adding the dark mode toggle
+
+
+1.making the website responsive--
+
+    to make the site responsive we use media quereis
