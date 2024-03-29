@@ -50,7 +50,7 @@ body{
     align-items: center;
 
 }
-.navList {
+.navList  {
     display: flex;
     list-style: none;
     text-decoration: none;
@@ -58,17 +58,29 @@ body{
     justify-content: space-around;
     gap: 2rem; 
 }
-.navList li a{
+.navList-mobile{
+    display: none;
+}
+.navList li a ,.navList-mobile a{
     border-radius: 5rem;
     padding: 0.5rem;
 }
 .navList li a {
     text-decoration: none;
 }
-.navList li a:hover {
+.navList li a:hover ,.navList-mobile li a:hover {
     background-color:black ;
     color: #FEFDED;
+    transform: scale(1.5);
 } 
+
+.menu-hamburger{
+    display: none;
+}
+
+
+
+
 
 /* hero section */
 

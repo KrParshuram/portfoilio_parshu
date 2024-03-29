@@ -4,8 +4,41 @@
         padding: 0;
     }
     /* removing nav list  */
-    .navList {
+
+
+    .navList{
         display: none;
+    }
+
+    .navList-mobile {
+        display: none;
+        /* display: flex; */
+        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: static;
+        z-index: 999;
+        gap: 3rem;
+        
+    }
+    .navList-mobile li {
+        list-style: none;
+        
+    }
+    .navList-mobile li a{
+        text-decoration: none;
+    }
+
+    .menu-hamburger{
+        display: block;
+    }
+
+    .cross-hamburger{
+        top: 0;
+        right: 0;
     }
 
     body{
