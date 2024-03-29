@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    /* font-family: cursive; */
     color: #000;
     
 }
@@ -801,13 +804,14 @@ div.box:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 1.2rem;
     /* background-color: #000; */
     
     
 
 }
-.footer-section h6,.footer-section p {
-    color: rgb(201, 13, 57)
+.footer-section h6,.footer-section p i {
+    color: rgb(0, 0, 0)
 }
 
 
