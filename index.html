@@ -10,7 +10,7 @@
 <body>
     <!-- creating navbar -->
     <ul class="navList-mobile">
-        <li class="cross-hamburger"><a><i class="fa-solid fa-xmark"></i></a></li>
+        <span class="cross-hamburger" onclick="hide()"><a><i class="fa-solid fa-xmark"></i></a></span>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
@@ -32,7 +32,7 @@
                 
             </ul>
 
-            <Spam class="menu-hamburger" ><i onclick="showMenu()" class="fa-solid fa-bars"></i></Spam>
+            <Spam class="menu-hamburger" ><i onclick="show()" class="fa-solid fa-bars"></i></Spam>
             
         </div>
     </div>
@@ -105,8 +105,12 @@
             <div class="para-right">
                 <p>Wanna see the project ..click "Demo"</p>
             <p>Click on "Code" to go git Repo</p>
+            <div class="show-mobile">
+                <p> <i class="fa-solid fa-chevron-left" id="swipe-symbol"> <span class="swipe-left">swipe left</span></i></p>
+            </div>
             </div>
         </div>
+        
         <div class="project-card-container">
             <div class="project-card">
                 <div class="project-img">
@@ -122,7 +126,8 @@
                     
                 </div>
             </div>
-            <div class="project-card">
+            
+            <div class="project-card" >
                 <div class="project-img">
                     <img src="proj.jpg">
                     <div  class="overlay">
@@ -192,7 +197,9 @@
                     
                 </div>
             </div>
+            
         </div>
+       
     </div>
 
     <!-- skill section  --> 

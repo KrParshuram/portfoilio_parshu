@@ -422,6 +422,10 @@ body{
 
 }
 
+.show-mobile{
+    display: none;
+}
+
 .overlay {
     display: none;
     width: 100%;

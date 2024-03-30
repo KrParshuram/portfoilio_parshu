@@ -20,7 +20,7 @@
         width: 100vw;
         height: 100vh;
         position: static;
-        z-index: 999;
+        /* z-index: 999; */
         gap: 3rem;
         
     }
@@ -34,6 +34,7 @@
 
     .menu-hamburger{
         display: block;
+        transform: scale(1.2);
     }
 
     .cross-hamburger{
@@ -117,7 +118,7 @@
 
     /* project section  */
     .project-section {
-        height: 800px;
+        height: auto;
         width: 80%;
         /* gap: 0rem; */
         flex-direction: column;
@@ -131,14 +132,24 @@
 
     .project-card-container {
         flex-direction: column;
-        flex-wrap: wrap;
-        height: 95%;
-        gap: .5rem;
+        /* flex-wrap: wrap; */
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        /* background-color: #FEFDED; */
+        /* background-color: antiquewhite; */
     }
 
     .project-card {
-        height: 220px;
-        width: 45%;
+        height: 300px;
+        width: 90%;
+        border: none;
+        /* background-color: rgb(193, 191, 189); */
         
     }
 
@@ -157,6 +168,21 @@
         width: 85%;
         height: 45%;
     }
+
+    .show-mobile{
+        display: inline;
+        margin-top: 1rem;
+        /* padding-right: auto; */
+    }
+    .swipe-left{
+        display: none;
+    }
+
+    #swipe-symbol:hover + .swipe-left {
+        display: block;
+    }
+    
+    
 
     /* skill section  */
 
