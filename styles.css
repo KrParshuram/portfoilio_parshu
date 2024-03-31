@@ -91,12 +91,19 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 10vh;
     /* background-color: black; */
 }
-
+@keyframes slideFromRight {
+    from {
+      transform: translateX(60%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 .hero-left {
     width: 40vw;
     height: 80vh;
@@ -104,6 +111,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    animation: slideFromRight .8s forwards;
 }
 
 .hero-left-heading {
@@ -171,10 +179,18 @@ body{
 }
 
 
-
+@keyframes slideFromLeft {
+    from {
+      transform: translateX(-60%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 .hero-right {
     width: 40%;
     height: 80%;
+    animation: slideFromLeft .8s forwards;
 }
 
 .hero-image {
@@ -434,7 +450,7 @@ body{
     height: 100%;
     z-index: 10;
 }
-@keyframe proj-ani {
+@keyframes proj-ani {
     0% {
         opacity: 0;
         display: none;
